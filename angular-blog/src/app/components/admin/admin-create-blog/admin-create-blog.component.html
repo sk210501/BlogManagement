@@ -1,0 +1,36 @@
+<body>
+    
+
+<div class="create-blog">
+   <table>
+    <tr>
+        <td>Title</td>
+        <td><input type='text' [(ngModel)]="postTitle" /> </td>
+    </tr>
+    <tr>
+        <td>Content</td>
+        <td><textarea type='text' [(ngModel)]="postContent" rows="10" cols="90" > </textarea></td>
+    </tr>
+    <tr>
+        <td>Image</td>
+        <td><input type='text' [(ngModel)]="postImage" /> </td>
+    </tr>
+    <tr>
+        <td>Category</td>
+        <td>
+            <select [(ngModel)]="category">
+                <option *ngFor="let item of getCategoryList" [value]="item?.value">{{item?.name}}</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+        </td>
+        <td>
+            <button mat-raised-button color="primary" (click)="createBlog()"> {{isEditMode ? 'Update Blog' : 'Create Blog'}}</button>
+        </td>
+    </tr>
+   </table>
+</div>
+</body>

@@ -1,0 +1,33 @@
+.menu-options {
+    display: flex;
+    justify-content: space-between;
+}
+.comment-list {
+    padding: 10px;
+}
+
+.comment-items {
+    padding: 10px;
+}
+
+.comment-items .content {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.comment-items .user-name {
+    display: flex;
+}
+.comment-items .user-name .mat-icon{
+    margin-right: 5px;
+}
+.update-delete-button {
+    text-align: right;
+}
+
+.update-delete-button .mdc-button {
+    margin-right: 5px;
+
+}
+

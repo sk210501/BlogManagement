@@ -1,0 +1,12 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 93vh;
+    background-color: darkslategray;
+}
+.create-blog{
+    border: 2px solid black;
+    padding: 20px;
+    background-color:gray;
+}
